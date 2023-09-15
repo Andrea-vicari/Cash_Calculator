@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cash Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+    <link href="./css/main.min.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div class="col-lg-8 mx-auto p-4 py-md-5">
+      <header class="pb-3 mb-2 border-bottom">
+
+          <h2 class="d-block">Cash Manager</h2>
+          <p>Fill each field with the amount divided per unit. The amount should be: </p>
+          <ul>
+            <li>Empty</li>
+            <li>0</li>
+            <li>A valid* number</li>
+          </ul>
+          <p class="bold">* Each field has a special validator to force to fill with the correct value.
+            Examples:</p>
+          <ul>
+            <li>You cannot fill 20$ with a number less than 20 or not multiple by 20</li>
+            <li>F</li>
+          </ul>
+
+      </header>
+      <div class="border-bottom mb-5">
+        <p>Date: <span class="small" id="date_cid"></span></p>
+
+        </div>
+      <main>
+
+        <form class="row g-3" name="cf" onsubmit="return validateForm()" action="./register.html">
+          <div class="col-md-6">
+            <label class="form-label">100$</label>
+            <input class="form-control" id="OneHundred" name="100$">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">20$</label>
+            <input class="form-control" id="twenty" name="20$">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">10$</label>
+            <input class="form-control" id="ten" name="10$">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">5$</label>
+            <input class="form-control" id="five" name="5$">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">1$</label>
+            <input class="form-control" id="one" name="1$">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">0.25$</label>
+            <input class="form-control" id="quarter" name="quarter">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">0.10$</label>
+            <input class="form-control" id="dime" name="dime">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">0.05$</label>
+            <input class="form-control" id="nickel" name="nickel">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">0.01$</label>
+            <input class="form-control" id="penny"name="penny">
+          </div>
+          <div class="col-12">
+            <button onclick="fillTheCash()">Save Drawer</button>
+          </div>
+          <div class="col-12">
+            <button onclick="resetFields()">Clear Fields</button>
+          </div>
+        </form>
+
+      </main>
+      <footer class="pt-5 my-5 text-body-secondary border-top">
+        Created by the Bootstrap team · © 2023
+      </footer>
+    </div>
+
+        <script src="./js/cash_manager.js"></script>
+  </body>
+</html>
