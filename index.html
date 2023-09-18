@@ -17,9 +17,9 @@
 
           <h2 class="display-4 fw-normal text-center text-body-secondary mb-3">Automatic Cash Calculator</h2>
           <div class="row">
-            <div class="col-xl-3 themed-grid-col py-5 pt-5 text-center">
-              <h1 class="step_indicator">INSTRUCTIONS</h1>
-              <h4 class="text-center text-body-secondary">Click to see the instructions</h4>
+            <div class="col-xl-3 themed-grid-col py-2 text-center">
+              <h2 class="mt-4 text-center step_indicator">Instructions</h2>
+              <h5 class="text-center text-body-secondary">Click to see the some video instructions</h5>
 
               <button class="btn btn-danger" onclick="displayVideoModal();">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
@@ -27,9 +27,11 @@
                 </svg>
               </button>
             </div>
-            <div class="col-xl-6 themed-grid-col py-5">
-              <h2 class="mt-4  text-center step_indicator">Current Cash In Drawer</h2>
-              <h5 class="text-center">Click the button below to see the current Cash In Drawer</h5>
+            <div class="col-xl-6 themed-grid-col py-2">
+              <h2 class="mt-4 text-center step_indicator">Current Cash In Drawer</h2>
+              <h5 class="text-center">
+                Click the button below to check the amount currently present in the Drawer, divided per each unit.
+                </h5>
             <div class="d-grid gap-2 col-2 mx-auto">
               <button class="btn btn-lg bd-btn-lg btn-info mt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                               C.I.D
@@ -37,22 +39,23 @@
             </div>
             <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                <h3 class="offcanvas-title" id="staticBackdropLabel">C.I.D Cash in Drawer</h3>
+
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
-                <div id="loop_LCD_container" class="row col-md-12 p-1 my-4 gap-1 mx-auto align-items-center justify-content-center">
+                <h5>Below what is currently present in the Drawer</h5>
 
-                  <!-- Single block to repeat -->
-                  <!-- The block is in Cash_Register.js -->
+                  <div class="row mb-3 text-center"  id="single_TX_block">
+                    <!-- The block is in Cash_Register.js
+                    in the fillTheLCD() function-->
+                  </div>
 
-                  <!-- Single block to repeat END-->
-                </div>
               </div>
             </div>
 
             </div>
-            <div class="col-xl-3 themed-grid-col py-5 text-center">
+            <div class="col-xl-3 themed-grid-col py-2 text-center">
               <h1 class="step_indicator mt-4">See The report page</h1>
               <h5 class="text-center">Click to see a list of all the valid transactions</h5>
 
