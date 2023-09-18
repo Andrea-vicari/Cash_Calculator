@@ -1,0 +1,36 @@
+
+@font-face {
+  font-family: "Digit";
+  src: url('./fonts/DS-DIGI.TTF') format('truetype');
+}
+.digit{font-family: "Digit";font-size: 3rem;}
+
+.ligth_blue_old{color:#07ecf8;}
+
+.ultra_small{font-size: 2rem;}
+
+.single_tx{background-color:#07ecf8;}
+
+.step_indicator{font-size: 2rem;}
+
+.themed-grid-col {
+    border: 1px solid #ced9bf;
+}
+.report_area{
+  background-color: #ecf1f1;
+}
+#frame_container{
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin: 0 auto;
+}
+#frame_container iframe{
+  position: absolute;
+  top: 0;
+left: 0;
+width: 100%;
+height: 100%;}
+/*
+#instr{display: none;}
+*/
