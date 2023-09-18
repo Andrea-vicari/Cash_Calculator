@@ -31,17 +31,24 @@
               <h2 class="mt-4  text-center step_indicator">Current Cash In Drawer</h2>
               <h5 class="text-center">Click the button below to see the current Cash In Drawer</h5>
             <div class="d-grid gap-2 col-2 mx-auto">
-              <button class="btn btn-info btn-lg mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                C.I.D
+              <button class="btn btn-lg bd-btn-lg btn-info mt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                              C.I.D
               </button>
             </div>
-            <div class="collapse" id="collapseExample">
+            <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
                 <div id="loop_LCD_container" class="row col-md-12 p-1 my-4 gap-1 mx-auto align-items-center justify-content-center">
 
                   <!-- Single block to repeat -->
+                  <!-- The block is in Cash_Register.js -->
 
                   <!-- Single block to repeat END-->
                 </div>
+              </div>
             </div>
 
             </div>
