@@ -1,2 +1,3 @@
 ## Automatic Cash Register
-#### Starting from an 
+#### A JS and Bootstrap Demo website
+
