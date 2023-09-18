@@ -102,17 +102,12 @@ function fillTheLCD(input){
           quantity = quantity;
         }
 
-        document.getElementById("loop_LCD_container").innerHTML += `
-        <div class="row mb-3 text-center">
+        document.getElementById("single_TX_block").innerHTML += `
         <div class="col-6 themed-grid-col bg-black single_tx">
         <h6 class="text-white" id="CID_display_unit">${element[0]}</h6>
         <h2 class="mx-3 ligth_blue_old digit" id="CID_display_quantity">${quantity} <span class="ultra_small">$</span></h2>
         </div>
-        </div>
-        <div class="row mb-3 text-center">
-        <div class="col-6 themed-grid-col"><h2>Cazzo Figa</h2></div>
-        <div class="col-6 themed-grid-col"><h2>Cazzo Figa</h2></div>
-      </div>`
+       `
     });
 }
 
