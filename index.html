@@ -16,8 +16,8 @@
       <main>
 
           <h2 class="display-4 fw-normal text-center text-body-secondary mb-3">Automatic Cash Calculator</h2>
-          <div class="row text-center" id="instr">
-            <div class="col-xl-12 themed-grid-col py-3">
+          <div class="row">
+            <div class="col-xl-3 themed-grid-col py-5 pt-5 text-center">
               <h1 class="step_indicator">INSTRUCTIONS</h1>
               <h4 class="text-center text-body-secondary">Click to see the instructions</h4>
 
@@ -27,7 +27,35 @@
                 </svg>
               </button>
             </div>
+            <div class="col-xl-6 themed-grid-col py-5">
+              <h2 class="mt-4  text-center step_indicator">Current Cash In Drawer</h2>
+              <h5 class="text-center">Click the button below to see the current Cash In Drawer</h5>
+            <div class="d-grid gap-2 col-2 mx-auto">
+              <button class="btn btn-info btn-lg mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                C.I.D
+              </button>
+            </div>
+            <div class="collapse" id="collapseExample">
+                <div id="loop_LCD_container" class="row col-md-12 p-1 my-4 gap-1 mx-auto align-items-center justify-content-center">
+
+                  <!-- Single block to repeat -->
+
+                  <!-- Single block to repeat END-->
+                </div>
+            </div>
+
+            </div>
+            <div class="col-xl-3 themed-grid-col py-5 text-center">
+              <h1 class="step_indicator mt-4">See The report page</h1>
+              <h5 class="text-center">Click to see a list of all the valid transactions</h5>
+
+              <a href="./report.html" class="btn btn-lg bd-btn-lg btn-info mt-3">
+                Report
+              </a>
+            </div>
+
           </div>
+
           <div class="row text-center">
             <div class="col-xl-3 themed-grid-col py-5 pt-5">
               <h1 class="step_indicator">1. Insert a price</h1>
@@ -69,34 +97,6 @@
               <button type="submit" id="goAll" class="btn btn-lg bd-btn-lg btn-info mt-3" onclick="getThePrice();sumPaid();checkCashRegister();">
                 Calculate
               </button>
-            </div>
-          </div>
-          <div class="row mb-3 text-center">
-            <div class="col-xl-6 themed-grid-col pb-5 bg-white">
-
-                <h2 class="mt-4  text-center step_indicator">Current Cash In Drawer</h2>
-                <h5 class="text-center">Click the button below to see the current Cash In Drawer</h5>
-              <div class="d-grid gap-2 col-2 mx-auto">
-                <button class="btn btn-info btn-lg mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                  C.I.D
-                </button>
-              </div>
-              <div class="collapse" id="collapseExample">
-                  <div id="loop_LCD_container" class="row col-md-12 p-1 my-4 gap-1 mx-auto align-items-center justify-content-center">
-
-                    <!-- Single block to repeat -->
-
-                    <!-- Single block to repeat END-->
-                  </div>
-              </div>
-            </div>
-            <div class="col-xl-6 themed-grid-col pb-5 bg-white">
-              <h1 class="step_indicator mt-4">See The report page</h1>
-              <h5 class="text-center">Click to see a list of all the valid transactions</h5>
-
-              <a href="./report.html" class="btn btn-lg bd-btn-lg btn-info mt-3">
-                Report
-              </a>
             </div>
           </div>
 
