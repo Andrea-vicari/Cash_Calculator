@@ -1,0 +1,273 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cash Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+    <link href="./css/main.min.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+
+  </head>
+  <body class="bg-body-secondary">
+    <div class="col-md-10 mx-auto p-1 py-md-5">
+
+      <main>
+
+          <h2 class="display-4 fw-normal text-center text-body-secondary mb-3">Automatic Cash Calculator</h2>
+          <div class="row text-center" id="instr">
+            <div class="col-xl-12 themed-grid-col py-3">
+              <h1 class="step_indicator">INSTRUCTIONS</h1>
+              <h4 class="text-center text-body-secondary">Click to see the instructions</h4>
+
+              <button class="btn btn-danger" onclick="displayVideoModal();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                  <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-xl-3 themed-grid-col py-5 pt-5">
+              <h1 class="step_indicator">1. Insert a price</h1>
+              <h4 class="text-center text-body-secondary">Insert a random price in the field below</h4>
+              <div class="col-12 mt-5">
+                <input id="TotalBill" type="number" value="" min="0.01" class="px-2 py-2 h6">
+              </div>
+
+            </div>
+            <div class="col-xl-6 themed-grid-col py-5">
+              <h1 class="step_indicator">2. Insert the Cash</h1>
+              <h4 class="text-center text-body-secondary">Click on each button to compose what customer paid:</h4>
+              <h5 class="text-center text-body-secondary">Similarly to currency counters using a light-beam counter, Please split into units what received from the Customer.</h5>
+
+            <div class="col-md-12 my-4">
+              <button class="btn_paid btn btn-secondary px-3 mb-3" id="100DollBtn" type="button">100$</button>
+              <button class="btn_paid btn btn-secondary px-3 mb-3" id="20DollBtn" type="button">20$</button>
+              <button class="btn_paid btn btn-secondary px-3 mb-3" id="10DollBtn" type="button">10$</button>
+              <button class="btn_paid btn btn-secondary px-3 mb-3" id="5DollBtn" type="button">5$</button>
+              <button class="btn_paid btn btn-secondary px-3 mb-3" id="1DollBtn" type="button">1$</button>
+              <button class="btn_paid btn btn-secondary px-3 mb-3" id="QuarterDollBtn" type="button">0.25$</button>
+              <button class="btn_paid btn btn-secondary px-3 mb-3" id="DimeBtn" type="button">0.10$</button>
+              <button class="btn_paid btn btn-secondary px-3 mb-3" id="NickelBtn" type="button">0.05$</button>
+              <button class="btn_paid btn btn-secondary px-3 mb-3" id="PennyBtn" type="button">0.01$</button>
+            </div>
+            <div id="paid_display_container" class="my-3 bg-black col-md-4 mx-auto">
+              <h2 id="paid_display" class="p-1 digit ligth_blue_old">0 <span class="ultra_small"> $</span></h2>
+            </div>
+            <p class="text-center fw-bold">Example:</p>
+            <p class="text-center">The Customer gives you 80$ => Ex. n.4 $20 => <strong>Click 4 times 20$ button</strong> </p>
+            <p class="text-center">The Customer gives you 30$ => Ex. n.1 $20 + N.1 $10=> <strong>Click once 20$ & once 10$ buttons</strong> </p>
+
+
+
+            </div>
+            <div class="col-xl-3 themed-grid-col py-5">
+              <h1 class="step_indicator">3. Calculate</h1>
+              <h5 class="text-center text-body-secondary">Once filled both Price and Cash, click calculate to get the Cash to give back</h5>
+              <button type="submit" id="goAll" class="btn btn-lg bd-btn-lg btn-info mt-3" onclick="getThePrice();sumPaid();checkCashRegister();">
+                Calculate
+              </button>
+            </div>
+          </div>
+          <div class="row mb-3 text-center">
+            <div class="col-xl-6 themed-grid-col pb-5 bg-white">
+
+                <h2 class="mt-4  text-center step_indicator">Current Cash In Drawer</h2>
+                <h5 class="text-center">Click the button below to see the current Cash In Drawer</h5>
+              <div class="d-grid gap-2 col-2 mx-auto">
+                <button class="btn btn-info btn-lg mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  C.I.D
+                </button>
+              </div>
+              <div class="collapse" id="collapseExample">
+                  <div id="loop_LCD_container" class="row col-md-12 p-1 my-4 gap-1 mx-auto align-items-center justify-content-center">
+
+                    <!-- Single block to repeat -->
+
+                    <!-- Single block to repeat END-->
+                  </div>
+              </div>
+            </div>
+            <div class="col-xl-6 themed-grid-col pb-5 bg-white">
+              <h1 class="step_indicator mt-4">See The report page</h1>
+              <h5 class="text-center">Click to see a list of all the valid transactions</h5>
+
+              <a href="./report.html" class="btn btn-lg bd-btn-lg btn-info mt-3">
+                Report
+              </a>
+            </div>
+          </div>
+
+            <!-- TRANSACTION MODAL -->
+            <div class="modal modal-sheet bg-dark px-4 py-md-5" tabindex="-1" role="dialog" id="transaction_modal">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content col-md-4 rounded-4 shadow bg-success">
+                  <div class="modal-header d-block">
+
+                    <h1 class="modal-title text-secondary">Valid Transaction</h1>
+                    <h3 class="modal-title small text-secondary" id="currentDate"></h3>
+
+                  </div>
+                  <div class="modal-body py-2 text-secondary">
+                    <h3 class="text-secondary">Total:<span id="totalBill"> </span>$</h3>
+                    <h3>Paid:<span id="totalPaid"> </span>$</h3>
+                    <p class="small"">Splitted Paid:<span id="splittedPaid"> </span></p>
+                    <h4>Change to give back</h4>
+                    <h6>(Unit, Amount):</h6>
+                    <h4><span id="totalChange"></span></h4>
+
+                  </div>
+                  <div class="modal-body py-2 text-secondary">
+                    <h2>DRAWER STATUS: <span id="status"></span></h2>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" onclick="hideModal();refreshPageTXOK();" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                  </div>
+              </div>
+            </div>
+            </div>
+            <!-- TRANSACTION MODAL end-->
+
+            <!-- ERROR MODAL (When paid is lower than the price) -->
+            <div class="modal modal-sheet bg-dark px-4 py-md-5" tabindex="-1" role="dialog" id="error_modal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow bg-danger">
+                  <div class="modal-header d-block">
+                    <h2 class="modal-title text-secondary">Invalid Operation</h2>
+                    <h4 class="modal-title text-secondary">
+                      As you can see below, The Money paid are not enough to cover the Price
+                    </h4>
+                  </div>
+                    <div class="modal-body py-3 text-secondary"">
+                      <h4 class="text-secondary mt-3 fw-bold">Price: <span id="price_error"></span></h4>
+                      <h4 class="text-secondary mt-3 fw-bold">Money paid: <span id="paid_error"></span></h4>
+                      <h3 class="text-secondary mt-3 fw-bold">Please, check your input</h3>
+                    </div>
+
+                  <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                    <div class="modal-footer">
+                      <button type="button" onclick="hideModal();" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+            <!-- ERROR MODAL End -->
+
+            <!-- ERROR MODAL (price not filled) id="noFill_modal"-->
+            <div class="modal modal-sheet bg-dark px-4 py-md-5" tabindex="-1" role="dialog" id="noFill_modal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow bg-danger">
+                  <div class="modal-header d-block">
+                    <h2 class="modal-title text-secondary">Invalid Operation</h2>
+                    <h3 class="modal-title small text-secondary" id="currentDateInvalid">
+
+                    </h3>
+                  </div>
+                    <div class="modal-body py-3 text-secondary">
+                      <h4 class="text-secondary mt-3 fw-bold">Please fill both Cash and Price</h4>
+
+                    </div>
+
+                  <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                    <div class="modal-footer">
+                      <button type="button" onclick="hideModal();refreshPageAndADD();" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+            <!-- ERROR MODAL End -->
+
+            <!-- ERROR MODAL (price not a number ) id="noNumberType_modal"-->
+            <div class="modal modal-sheet bg-dark px-4 py-md-5" tabindex="-1" role="dialog" id="noNumberType_modal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow bg-danger">
+                  <div class="modal-header d-block">
+                    <h2 class="modal-title text-secondary">Invalid Operation</h2>
+                    <h3 class="modal-title small text-secondary" id="currentDateInvalid">
+
+                    </h3>
+                  </div>
+                    <div class="modal-body py-3 text-secondary">
+                      <h4 class="text-secondary mt-3 fw-bold">Price is not a number</h4>
+                      <p>Only numbers (positive) and "." are allowed</p>
+                      <h4 class="text-secondary mt-3 fw-bold">Please check your input</h4>
+                    </div>
+
+                  <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                    <div class="modal-footer">
+                      <button type="button" onclick="hideModal();refreshPageAndADD();" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+            <!-- ERROR MODAL End -->
+
+            <!-- ERROR MODAL (due to change exceeds that in the drawer (totalOfCid) -->
+                <div class="modal modal-sheet bg-dark px-4 py-md-5" tabindex="-1" role="dialog" id="insuffFunds_modal">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded-4 shadow bg-danger">
+                      <div class="modal-header d-block">
+                        <h2 class="modal-title text-secondary">Invalid Transaction</h2>
+                        <h3 class="modal-title small text-secondary" id="currentDateInvalid">
+
+                        </h3>
+                      </div>
+                        <div class="modal-body py-3 text-secondary">
+                          <h4 class="text-secondary mt-3 fw-bold">Insufficient Funds to give back</h4>
+                          <h4 class="text-secondary mt-3 fw-bold">Please, check by click the CID button below</h4>
+                        </div>
+
+                      <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                        <div class="modal-footer">
+                          <button type="button" onclick="hideModal();refreshPageAndADD()" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                </div>
+                <!-- ERROR MODAL End -->
+
+             <!-- VIDEO INSTRUCTIONS MODAL  -->
+             <div class="modal modal-sheet bg-dark px-4 py-md-5" tabindex="-1" role="dialog" id="video_modal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow bg-dark">
+                  <div class="modal-header border-bottom-0">
+
+                    <h1 class="modal-title fs-5 text-secondary" id="currentDate"></h1>
+                    <button type="button" onclick="hideModal();" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body py-0 text-secondary"">
+                    <div id="frame_container">
+                      <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </iframe>
+                    </div>
+                  <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- VIDEO INSTRUCTIONS MODAL End -->
+
+      </main>
+      <footer class="text-body-secondary border-top border-3 text-center mb-0 pb-0 pt-5">
+        <h5>Coded with <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="crimson" class="bi bi-heart-pulse-fill" viewBox="0 0 16 16">
+          <path d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9H1.475Z"/>
+          <path d="M.88 8C-2.427 1.68 4.41-2 7.823 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.88Z"/>
+        </svg> by Andrea Vicari</h5>
+        <h5>Code available  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+        </svg></h5>
+      </footer>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="./js/Cash_Register.js"></script>
+</body>
+</html>
