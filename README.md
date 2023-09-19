@@ -1,5 +1,6 @@
 ## Automatic Cash Register
-#### A JS and Bootstrap Demo website
+#### A Demo website using JavaScript and Bootstrap.
+
 
 ## Features
 
