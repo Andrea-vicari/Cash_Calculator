@@ -4,7 +4,6 @@
   src: url('./fonts/DS-DIGI.TTF') format('truetype');
 }
 .digit{font-family: "Digit";font-size: 3rem;}
-
 .ligth_blue_old{color:#07ecf8;}
 
 .ultra_small{font-size: 2rem;}
