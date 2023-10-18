@@ -15,11 +15,11 @@ It also, working with JSON and localStorage, keeping track of all the Transactio
 
 ## FILES:
 
-JS FILES:<br>
-Report.js: File for the report page, in charge of listing all the valid transactions and save them in a JSON file.<br>
-Cash_Register.js: File for the Calculator page, in charge of calculating the Cash, update the Drawer and generate a list of transactions.<br>
-CSS FILES:<br>
-Custom.css: File for CSS cusortmizations
+JS FILES:
+Report.js: File for the report page, in charge of listing all the valid transactions and save them in a JSON file.
+Cash_Register.js: File for the Calculator page, in charge of calculating the Cash, update the Drawer and generate a list of transactions.
+CSS FILES:
+Custom.css: File for CSS customizations
 
 
 
