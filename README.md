@@ -13,6 +13,11 @@ It also, working with JSON and localStorage, keeping track of all the Transactio
 
 ### 👉👉👉 [LIVE DEMO](#)<br>
 
+## JS directory
+Containing Javascript files
+
+
+
 
 
 
