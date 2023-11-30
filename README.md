@@ -1,8 +1,8 @@
-# Unit 01: Repository for CASH CALCULATOR JS website
+# Repository for CASH CALCULATOR JS website
 ## Intro
 This project starts from an idea to transform a Javascript algorithm, developed while i was attending a course, in a real interface. The main task of the original 👉 Project, needed to achieve a Certification from FreeCodeCamp, was to Design a cash register drawer function checkCashRegister() that accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument. Cid is a 2D array listing available currency.
 
-### Demo live using mySQL database
+### Demo live
  👉👉👉 [LIVE DEMO](http://anvicdev.byethost7.com/cashreg/?i=1)<br>
 
 ## OverView
