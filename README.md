@@ -1,5 +1,7 @@
 # Repository for CASH CALCULATOR JS website
 
+<img src="https://github.com/Andrea-vicari/Andrea-vicari/blob/main/CR_GitHub_cover.jpg" width="400px">
+
 ## Intro
 This project starts from an idea to transform a Javascript algorithm, developed while i was attending a course, in a real interface. The main task of the original 👉 [Project](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/cash-register), needed to achieve a Certification from FreeCodeCamp, was to Design a cash register drawer function checkCashRegister() that accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument and return the Cash to give back.
 
