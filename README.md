@@ -4,11 +4,11 @@
 This project starts from an idea to transform a Javascript algorithm, developed while i was attending a course, in a real interface. The main task of the original 👉 [Project](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/cash-register), needed to achieve a Certification from FreeCodeCamp, was to Design a cash register drawer function checkCashRegister() that accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument and return the Cash to give back.
 
 ### Video Instructions
-* STEP 1 - Intro 
-* STEP 2 - Check the Drawer
-* STEP 3 - Fill the Drawer
-* STEP 4 - Calculator page
-* STEP 5 - Report page
+* STEP 1 - <a href="https://www.loom.com/share/1efa09a420ac436bb1d041834a1f54e2?sid=10c7ccd2-aba3-4590-81be-bf91236ae239" target ="_blank">Intro</a>
+STEP 2 - Check the Drawer
+STEP 3 - Fill the Drawer
+STEP 4 - Calculator page
+STEP 5 - Report page
 
 ## Pages
 
