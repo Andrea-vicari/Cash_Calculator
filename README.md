@@ -4,32 +4,11 @@
 This project starts from an idea to transform a Javascript algorithm, developed while i was attending a course, in a real interface. The main task of the original 👉 Project, needed to achieve a Certification from FreeCodeCamp, was to Design a cash register drawer function checkCashRegister() that accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument and return the CAshn to give back.
 
 ### Video Instructions
-<div>
-    <a href="https://www.loom.com/share/1efa09a420ac436bb1d041834a1f54e2" target="_blank">
-      <p>STEP1 - Intro</p>
-    </a>
-</div>
-<div>
-    <a href="https://www.loom.com/share/1efa09a420ac436bb1d041834a1f54e2" target="_blank">
-      <p>STEP2 - Check Drawer</p>
-    </a>
-</div>
-<div>
-    <a href="https://www.loom.com/share/1efa09a420ac436bb1d041834a1f54e2" target="_blank">
-      <p>STEP3 - Fill the Drawer</p>
-    </a>
-</div>
- <div>
-    <a href="https://www.loom.com/share/1efa09a420ac436bb1d041834a1f54e2" target="_blank">
-      <p>STEP4 - Calculator</p>
-    </a>
- </div>
-  <div>
-    <a href="https://www.loom.com/share/1efa09a420ac436bb1d041834a1f54e2" target="_blank">
-      <p>STEP5 - Report page</p>
-    </a>
- </div>
-
+STEP1
+STEP2
+STEP3
+STEP4
+STEP5
 
 ## Pages
 
