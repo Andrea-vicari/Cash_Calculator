@@ -9,15 +9,19 @@ This project starts from an idea to transform a Javascript algorithm, developed 
 
 ## Files
 * List of files
-* index.html -
-* drawer.html
-* report.html
-* css
-  *
-  *
-  *
-
-
+* index.html - file for the calculator page
+* drawer.html - file for the drawer page
+* report.html - file for the report page
+* storeToMYSQL.php - file to store the drawer into the database
+* server.js - file to fetch the drawer from the database
+* css folder
+  * custom.css - css customizations
+  * main.min.css - Bootstrap css files
+  * fonts : folder with DS-DIGI font for the LCD display
+* js folder
+ * Cash_register.js - JS file to calculate the Cash, the drawer
+ * Report.js - JS file to calculate the Cash, the drawer
+ * 
 ## Installation
 * FrontEnd and NODE.js packages
   * Clone this directory under `/htdocs` directory of your XAMPP installation
