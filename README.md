@@ -2,8 +2,16 @@
 ## Intro
 This project starts from an idea to transform a Javascript algorithm, developed while i was attending a course, in a real interface. The main task of the original 👉 Project, needed to achieve a Certification from FreeCodeCamp, was to Design a cash register drawer function checkCashRegister() that accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument. Cid is a 2D array listing available currency.
 
-### Demo live
- 👉👉👉 [LIVE DEMO](http://anvicdev.byethost7.com/cashreg/?i=1)<br>
+### Video Instrutions
+<div>
+    <a href="https://www.loom.com/share/1efa09a420ac436bb1d041834a1f54e2">
+      <p>STEP1 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/1efa09a420ac436bb1d041834a1f54e2">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/1efa09a420ac436bb1d041834a1f54e2-1701588506514-with-play.gif">
+    </a>
+  </div>
+ 
 
 ## OverView
 
