@@ -1,14 +1,14 @@
 # Repository for CASH CALCULATOR JS website
 
 ## Intro
-This project starts from an idea to transform a Javascript algorithm, developed while i was attending a course, in a real interface. The main task of the original 👉 Project, needed to achieve a Certification from FreeCodeCamp, was to Design a cash register drawer function checkCashRegister() that accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument and return the CAshn to give back.
+This project starts from an idea to transform a Javascript algorithm, developed while i was attending a course, in a real interface. The main task of the original 👉 [Project](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/cash-register), needed to achieve a Certification from FreeCodeCamp, was to Design a cash register drawer function checkCashRegister() that accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument and return the Cash to give back.
 
 ### Video Instructions
-STEP1
-STEP2
-STEP3
-STEP4
-STEP5
+* STEP 1 - Intro 
+* STEP 2 - Check the Drawer
+* STEP 3 - Fill the Drawer
+* STEP 4 - Calculator page
+* STEP 5 - Report page
 
 ## Pages
 
@@ -36,7 +36,7 @@ STEP5
 
 * FrontEnd and NODE.js packages
 
-  * Clone this directory under /htdocs directory of your XAMPP installation
+  * Clone this directory under `/htdocs` directory of your XAMPP installation
   * Install locally Bootstrap, digit `npm install bootstrap@3`
   * Initialize the directory, digit `npm init`
   * Add the following packages MYSQL, EXPRESS, CORS, digit `npm i mysql express cors`
