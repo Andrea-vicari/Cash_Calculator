@@ -19,9 +19,12 @@ This project starts from an idea to transform a Javascript algorithm, developed 
   * main.min.css - Bootstrap css files
   * fonts : folder with DS-DIGI font for the LCD display
 * js folder
- * Cash_register.js - JS file to calculate the Cash, the drawer
- * Report.js - JS file to calculate the Cash, the drawer
- * 
+ * Cash_register.js - JS file to calculate the Cash, the drawer and store the transaction in localStorage
+ * Report.js - JS file to show the list of the transaction and save the report via JSON
+
+## Technologies
+<img src="https://github.com/Andrea-vicari/Andrea-vicari/blob/main/Bootstrap_logo.png" style="width:45px"> <img src="https://github.com/Andrea-vicari/Andrea-vicari/blob/main/JS_logo.png" style="width:45px"> <img src="https://github.com/Andrea-vicari/Andrea-vicari/blob/main/NODE_logo.png" style="width:45px"> <img src="https://github.com/Andrea-vicari/Andrea-vicari/blob/main/PHP_logo.png" style="width:45px">
+
 ## Installation
 * FrontEnd and NODE.js packages
   * Clone this directory under `/htdocs` directory of your XAMPP installation
@@ -66,10 +69,6 @@ This project starts from an idea to transform a Javascript algorithm, developed 
   * User can find a report of Each valid transactions done.
   * Clicking the Save the Report button, you can download a .JSON file with all the transactions done.
 
-
-## Technologies
-<img src="https://github.com/Andrea-vicari/Andrea-vicari/blob/main/Bootstrap_logo.png" style="width:45px"> <img src="https://github.com/Andrea-vicari/Andrea-vicari/blob/main/JS_logo.png" style="width:45px"> <img src="https://github.com/Andrea-vicari/Andrea-vicari/blob/main/NODE_logo.png" style="width:45px"> <img src="https://github.com/Andrea-vicari/Andrea-vicari/blob/main/PHP_logo.png" style="width:45px">
-
 ## Software used
 
 * XAMPP -
@@ -80,6 +79,7 @@ This project starts from an idea to transform a Javascript algorithm, developed 
     * Mysql - 2.18.1
     * Express - 4.18.2
     * Cors - 2.8.5
+ * FileSaver.js - 2.0.0
 
 - - -
 © 2023 Andrea Vicari | All Rights Reserved.
