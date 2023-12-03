@@ -6,6 +6,9 @@ This project starts from an idea to transform a Javascript algorithm, developed 
 ### Video Instructions
 * STEP 1 - <a href="https://www.loom.com/share/1efa09a420ac436bb1d041834a1f54e2?sid=10c7ccd2-aba3-4590-81be-bf91236ae239" target ="_blank">Intro</a>
 * STEP 2 - <a href="https://www.loom.com/share/95b404f9d6674ecbb5bf640f0d8e97a5?sid=8e2a8187-dfc7-4d3a-9081-52be0766a165" target ="_blank">Check the Drawer</a>
+* STEP 3 - <a href="https://www.loom.com/share/9f139f7742c44822998f68c433490789?sid=7e6b2a93-51b7-4c3e-9287-dd21050a5bcc" target ="_blank">Fill the Drawer</a>
+* STEP 4 - <a href="https://www.loom.com/share/804eec38e76142ecaf4ebc39681bb3ef?sid=e7afda2e-bd43-4dd1-9ff9-20ea9e6004fa" target ="_blank">Calculator page</a>
+* STEP 5 - <a href="https://www.loom.com/share/06f8f394c48c4cc9ba77d3565af00104?sid=49f172af-c3fd-4de7-ba58-71c86ee2c62c" target ="_blank">Report page</a>
 
 ## Files
 * List of files
