@@ -5,10 +5,7 @@ This project starts from an idea to transform a Javascript algorithm, developed 
 
 ### Video Instructions
 * STEP 1 - <a href="https://www.loom.com/share/1efa09a420ac436bb1d041834a1f54e2?sid=10c7ccd2-aba3-4590-81be-bf91236ae239" target ="_blank">Intro</a>
-STEP 2 - Check the Drawer
-STEP 3 - Fill the Drawer
-STEP 4 - Calculator page
-STEP 5 - Report page
+* STEP 2 - <a href="https://www.loom.com/share/95b404f9d6674ecbb5bf640f0d8e97a5?sid=8e2a8187-dfc7-4d3a-9081-52be0766a165" target ="_blank">Check the Drawer</a>
 
 ## Pages
 
