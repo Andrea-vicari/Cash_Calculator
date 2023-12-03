@@ -7,6 +7,27 @@ This project starts from an idea to transform a Javascript algorithm, developed 
 * STEP 1 - <a href="https://www.loom.com/share/1efa09a420ac436bb1d041834a1f54e2?sid=10c7ccd2-aba3-4590-81be-bf91236ae239" target ="_blank">Intro</a>
 * STEP 2 - <a href="https://www.loom.com/share/95b404f9d6674ecbb5bf640f0d8e97a5?sid=8e2a8187-dfc7-4d3a-9081-52be0766a165" target ="_blank">Check the Drawer</a>
 
+## Installation
+
+* FrontEnd and NODE.js packages
+
+  * Clone this directory under `/htdocs` directory of your XAMPP installation
+  * Install locally Bootstrap, digit `npm install bootstrap@3`
+  * Initialize the directory, digit `npm init`
+  * Add the following packages MYSQL, EXPRESS, CORS, digit `npm i mysql express cors`
+  * Digit `npm start` to start the server
+  * You should see `Listening on PORT 5000`
+  * Start the XAMMP server
+  * In the browser, digit `localhost`
+  * Click the name of the directory you installed this application
+  * You should see the Calculator page
+
+* Database -  This project needs a MYSQL database to store the Drawer filled in the Drawer page.
+  * Start the XAMMP server
+  * In the browser, digit `localhost/phpmyadmin/`
+  * Click IMPORT to import the `cash_calcultor.sql` database
+  * It contains the `drawer` table, with initial drawer (empty)
+
 ## Pages
 
 * Calculator page
@@ -28,27 +49,6 @@ This project starts from an idea to transform a Javascript algorithm, developed 
 * Report page
   * User can find a report of Each valid transactions done.
   * Clicking the Save the Report button, you can download a .JSON file with all the transactions done.
-
-## Installation
-
-* FrontEnd and NODE.js packages
-
-  * Clone this directory under `/htdocs` directory of your XAMPP installation
-  * Install locally Bootstrap, digit `npm install bootstrap@3`
-  * Initialize the directory, digit `npm init`
-  * Add the following packages MYSQL, EXPRESS, CORS, digit `npm i mysql express cors`
-  * Digit `npm start` to start the server
-  * You should see `Listening on PORT 5000`
-  * Start the XAMMP server
-  * In the browser, digit `localhost`
-  * Click the name of the directory you installed this application
-  * You should see the Calculator page
-
-* Database -  This project needs a MYSQL database to store the Drawer filled in the Drawer page.
-  * Start the XAMMP server
-  * In the browser, digit `localhost/phpmyadmin/`
-  * Click IMPORT to import the `cash_calcultor.sql` database
-  * It contains the `drawer` table, with initial drawer (empty)
 
 
 ## Technologies
